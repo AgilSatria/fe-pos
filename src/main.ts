@@ -11,6 +11,8 @@ import Aura from '@primeuix/themes/aura';
 import Button from 'primevue/button'
 import InputText from 'primevue/inputtext'
 import { definePreset } from '@primeuix/themes'
+import 'primeicons/primeicons.css'
+
 
 
 
