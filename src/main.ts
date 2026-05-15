@@ -13,6 +13,10 @@ import InputText from 'primevue/inputtext'
 import { definePreset } from '@primeuix/themes'
 import 'primeicons/primeicons.css'
 
+import { ConfirmationService, ToastService } from 'primevue'
+
+
+
 
 
 
@@ -20,6 +24,9 @@ const app = createApp(App)
 
 app.use(createPinia())
 app.use(router)
+app.use(ConfirmationService)
+app.use(ToastService)
+
 
 const flashPrame = definePreset(Aura, {
     semantic: {
@@ -69,5 +76,10 @@ app.use(PrimeVue,{
 }
     
 )
+
+
+app.use(ConfirmationService)
+
+app.use(ToastService)
 
 app.mount('#app')

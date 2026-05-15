@@ -33,8 +33,15 @@ const menuItems = ref([
         label: "General",
         items: [
             { label: "Dashboard", icon: "pi pi-home pi-th-large", to: "/" },
-            { label: "Transaksi", icon: "pi pi-shopping-cart", to: "/transactions" },
-            { label: "Produk", icon: "pi pi-box", to: "/products" },
+        ]
+    },
+    {
+        label: "Management",
+        items: [
+            { label: "Product Categories", icon: "pi pi-tag", to: "/product-categories" },
+            { label: "Categories", icon: "pi pi-tags pi-th-large", to: "/categories" },
+            { label: "Orders", icon: "pi pi-shopping-cart pi-th-large", to: "/orders" },
+            { label: "Customers", icon: "pi pi-users pi-th-large", to: "/customers" },
         ]
     }
 ])
