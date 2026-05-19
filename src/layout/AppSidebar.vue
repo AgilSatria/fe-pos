@@ -39,6 +39,7 @@ const menuItems = ref([
         label: "Management",
         items: [
             { label: "Product Categories", icon: "pi pi-tag", to: "/product-categories" },
+            { label: "Products", icon: "pi pi-box", to: "/products" },
             { label: "Categories", icon: "pi pi-tags pi-th-large", to: "/categories" },
             { label: "Orders", icon: "pi pi-shopping-cart pi-th-large", to: "/orders" },
             { label: "Customers", icon: "pi pi-users pi-th-large", to: "/customers" },
