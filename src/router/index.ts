@@ -6,6 +6,7 @@ import CategoryList from '@/pages/product-categories/CategoryList.vue'
 
 import Dashboard from '@/pages/Dashboard.vue'
 import { createRouter, createWebHistory } from 'vue-router'
+import CategoryForm from '@/pages/product-categories/CategoryForm.vue'
 
 
 
@@ -35,6 +36,17 @@ const router = createRouter({
           name: 'product-categories',
           component: CategoryList
         },
+        {
+          path: '/product-categories/create',
+          name: 'product-categories-create',
+          component: CategoryForm
+        },
+        {
+          path: '/product-categories/:id/edit',
+          name: 'product-categories-edit',
+          component: CategoryForm,
+          props: true
+        }
       ]
     },
   ],

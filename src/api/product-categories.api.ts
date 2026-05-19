@@ -10,4 +10,29 @@ export const getCategories =  (params?: {
 } ) => api.get('/product-categories', { params })
 
 
+export const getCategory = (id: number) => api.get(`/product-categories/${id}`)
+
+
+
+export const createCategory = (payload: { 
+    name: string
+    description?: string
+}) => api.post('/product-categories', payload)
+
+
+export const updateCategory = (id: number, payload: { 
+    name: string
+    description?: string
+}) => api.put(`/product-categories/${id}`, payload)
+
+
+export const uploadCategoryImage = (id: number, formData: FormData) => {
+    const url = `/product-categories/${id}/image`;
+    return api.post(url, formData, {
+        headers: {
+            'Content-Type': 'multipart/form-data'
+        }
+    });
+};
+
 export const deleteCategory = (id: number) => api.delete(`/product-categories/${id} `)
