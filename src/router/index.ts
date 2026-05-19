@@ -11,6 +11,8 @@ import ProductList from '@/pages/products/ProductList.vue'
 import ProductForm from '@/pages/products/ProductForm.vue'
 import CustomerList from '@/pages/customers/CustomerList.vue'
 import CustomerForm from '@/pages/customers/CustomerForm.vue'
+import TransactionList from '@/pages/transactions/TransactionList.vue'
+import TransactionDetail from '@/pages/transactions/TransactionDetail.vue'
 
 
 
@@ -81,6 +83,17 @@ const router = createRouter({
           path: '/customers/:id/edit',
           name: 'customers-edit',
           component: CustomerForm,
+          props: true
+        },
+        {
+          path: '/transactions',
+          name: 'transactions',
+          component: TransactionList
+        },
+        {
+          path: '/transactions/:id',
+          name: 'transactions-detail',
+          component: TransactionDetail,
           props: true
         }
       ]
